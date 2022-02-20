@@ -10,19 +10,28 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int n, k = 0;
     cin >> n;
+    // # Solution 1
 
-    vector<int> a = {};
-    while (n > 1)
+    // vector<int> a = {};
+    // while (n > 1)
+    // {
+    //     a.push_back(n % 10);
+    //     n /= 10;
+    // }
+    // a.push_back(n % 10);
+
+    // for (int i = 0; i < a.size(); i++)
+    //     cout << a[i];
+
+    // # Solution 2
+    while (n >= 1)
     {
-        a.push_back(n % 10);
+        k = (10 * k) + n % 10;
         n /= 10;
     }
-    a.push_back(n % 10);
-
-    for (int i = 0; i < a.size(); i++)
-        cout << a[i];
+    cout << k;
 
     return 0;
 }
