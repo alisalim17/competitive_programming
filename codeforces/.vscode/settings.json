@@ -2,7 +2,9 @@
   "files.associations": {
     "array": "cpp",
     "ostream": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "sstream": "cpp",
+    "regex": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }
